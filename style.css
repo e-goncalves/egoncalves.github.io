@@ -31,7 +31,7 @@ body {
     border-radius: 0px 60px 0px 0px;
 }
 
-.left-section-content{
+.left-section-contents{
     padding: 2rem 2rem;
 }
 
@@ -78,10 +78,6 @@ body {
     padding-top: 3rem;
 }
 
-.contact-info, .skills {
-    padding-left: 1.5rem;
-}
-
 .contact-info ul {
     padding-top: 1.5rem;
 
@@ -109,6 +105,20 @@ body {
  
 }
 .skills ul li p {
+    padding: .4rem 0;
+    color: #d6dbdfaf;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.languages ul {
+    padding-top: 1.5rem;
+ 
+}
+.languages ul li p {
     padding: .4rem 0;
     color: #d6dbdfaf;
     font-size: 18px;
@@ -164,7 +174,8 @@ body {
 
 .experience-contents,
 .education-contents,
-.awards-contents {
+.awards-contents, 
+.publications-contents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
@@ -215,7 +226,8 @@ body {
 @media screen and (max-width:780px) {
     .experience-contents,
     .education-contents,
-    .awards-contents {
+    .awards-contents,
+    .publications-contents {
         grid-template-columns: repeat(1, 1fr);
     }
 }
